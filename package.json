@@ -1,0 +1,36 @@
+{
+  "name": "nwl-unite",
+  "version": "1.0.0",
+  "description": "- [] O organizador deve poder cadastar um novo envento; - [] O organizador deve pode visualizar dados de um evento; - [] O organizador deve pode visualizar a lista de participantes; - [] O participante deve poder se inscrever em um evento; - [] O participante deve poder visualizar  seu crachá de inscrição; - [] o participante deve poder realizar check-in no evento;",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/server.ts",
+    "build": "tsup src --format esm",
+    "start": "node dist/server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "dayjs": "^1.11.10",
+    "faker-js": "^1.0.0",
+    "prisma": "^5.11.0",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^3.0.0",
+    "@prisma/client": "^5.11.0",
+    "fastify": "^4.26.2",
+    "fastify-type-provider-zod": "^1.1.9",
+    "zod": "^3.22.4"
+  }
+}

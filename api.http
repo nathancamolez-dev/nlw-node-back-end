@@ -1,0 +1,38 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "supimpa evento",
+  "details": null,
+  "maximumAttendees": 2
+}
+
+###
+
+POST http://localhost:3333/events/5f540681-aa3a-4909-8943-f52e6a1f055c/attendees
+Content-Type: application/json
+
+{
+  "name": "teste",
+  "email": "Meu@Meu.com.br"
+}
+
+###
+
+GET http://localhost:3333/events/5f540681-aa3a-4909-8943-f52e6a1f055c
+
+###
+
+GET http://localhost:3333/attendees/4/badge
+###
+
+GET http://localhost:3333/attendees/10121/check-in
+
+###
+
+GET http://localhost:3333/events/5f540681-aa3a-4909-8943-f52e6a1f055c/attendees
+
+
+###
+
+http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees
